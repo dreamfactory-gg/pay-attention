@@ -1,0 +1,16 @@
+[package]
+name = "pa"
+version.workspace = true
+edition.workspace = true
+
+[[bin]]
+name = "pay-attention"
+path = "src/main.rs"
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+clap = { version = "4", features = ["derive"] }
+pa-core = { path = "../pa-core" }
+serde.workspace = true
+serde_json.workspace = true

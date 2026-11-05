@@ -1,0 +1,21 @@
+[package]
+name = "pay-attention-app"
+version.workspace = true
+edition.workspace = true
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+anyhow.workspace = true
+chrono.workspace = true
+serde.workspace = true
+serde_json.workspace = true
+pa-core = { path = "../../crates/pa-core" }
+tauri = { version = "2", features = ["tray-icon"] }
+tauri-plugin-dialog = "2"
+tauri-plugin-global-shortcut = "2"
+tauri-plugin-positioner = { version = "2", features = ["tray-icon"] }
+objc2 = "0.6"
+objc2-app-kit = { version = "0.3", default-features = false, features = ["NSWorkspace", "NSRunningApplication", "std"] }
+rodio = { version = "0.23", features = ["symphonia-aiff"] }

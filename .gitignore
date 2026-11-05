@@ -1,0 +1,10 @@
+target/
+node_modules/
+dist/
+app/src-tauri/gen/
+__pycache__/
+
+# Maintainer files, never committed: private/ is its own repo (dreamfactory-gg/pay-attention-private).
+/private/
+/TASKS.md
+/REPORT.md
